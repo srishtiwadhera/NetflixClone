@@ -1,0 +1,197 @@
+/*Utility Classes*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.buttonContainer button {
+	padding: 5px 6px;
+	font-size: 15px;
+	width: 15%;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-family: 'Raleway', sans-serif;
+}
+.buttonContainer button:first-of-type {
+	background-color: #E62D35;
+}
+.buttonContainer button:last-of-type {
+	background-color: #3F3F49;
+}
+/*Header Container*/
+body {
+	margin: 0;
+}
+.headercontainer {
+	background: url(sky.jpg) no-repeat;
+	background-size: cover;
+	background-position: 30% 30%;
+	/*x and y*/
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	padding: 3px;
+}
+.headercontainer ul {
+ /*to remove by default  margin added by the browser*/
+	margin: 0;
+}
+.headercontainer li {
+	list-style-type: none;
+	float: left;
+	padding: 6px;
+}
+.navbar-brand {
+	width: 30px;
+	height: 30px;
+}
+/*Descendant Selector class ke andar kuch h*/
+.navbar-brand img {
+	width: 100%;
+
+}
+.hero_content {
+	width: 80%;
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*margin-top: 130px;*/
+	margin: 83px auto 98px;
+	/*top left right bottom*/
+}
+/*.hero_content .btnContainer button {
+	padding: 5px 6px;
+	font-size: 15px;
+	width: 120px;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-family: 'Raleway', sans-serif;
+}
+.hero_content .btnContainer button:first-of-type {
+	background-color: #E62D35;
+}
+.hero_content .btnContainer button:last-of-type {
+	background-color: #3F3F49;
+}*/
+
+/*Main Content*/
+.main_content {
+	width:  80%;
+	/*margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;*/
+	margin: 30px auto 0;
+}
+.filter_content {
+	width: 20%;
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	border: 1px solid #ddd;
+}
+.filter_content:hover {
+	box-shadow: 0 0 15px 5px rgba(39, 43, 55, 0.15);
+}
+
+.filter_content h2 {
+	text-align: center;
+}
+.filter_list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.filter_list li {
+	list-style-type: none;
+	padding: 10px;
+}
+.filter_list li.active {
+	color: #E62D35;
+}
+/*when we give float to elements the parent container and it collapse*/
+.video_container {
+	width: 72%;
+	float: right;
+	font-family: 'Raleway', sans-serif;
+}
+.video_search input {
+	width: 90%;
+	padding: 7px;
+	border: 1px solid #ddd;
+
+}
+.video_list_item {
+	width: 45%;
+	float: left;
+	margin-right: 2%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+.video_list_item:hover {
+	box-shadow: 0 0 15px 5px rgba(39, 43, 55, 0.15);
+}
+.video_item_wrapper {
+	padding: 10px;
+}
+.video_list_item h2 {
+	color: #847f7f;
+}
+.video_item_desc {
+	color: #111;
+	padding: 5px;
+}
+.thumbnailcontainer img {
+	width: 100%;
+}
+.video_item_wrapper .buttonContainer button {
+	width: 40%;
+}
+/*.video_container .videobtncontainer button {
+	padding: 5px 6px;
+	font-size: 15px;
+	width: 120px;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-family: 'Raleway', sans-serif;
+}
+.video_container .videobtncontainer button:first-of-type {
+	background-color: #E62D35;
+}
+.video_container .videobtncontainer button:last-of-type {
+	background-color: #3F3F49;
+}*/
+@media screen and (max-width: 750px) {
+	.filter_content {
+		display: none;
+	}
+	.video_container {
+		width: 100%;
+		float: none;
+	}
+	.buttonContainer button {
+		width: 40%;
+	}
+}
+@media screen and (max-width: 560px) {
+	.headercontainer li {
+		float: none;
+		text-align: center;
+	}
+	.navbar-brand {
+		width: 70px;
+		height: 28px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.video_search input {
+		width: 100%
+	}
+	.video_list_item {
+		width: 100%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
